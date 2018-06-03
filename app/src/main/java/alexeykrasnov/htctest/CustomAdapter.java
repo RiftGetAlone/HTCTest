@@ -47,7 +47,6 @@ public class CustomAdapter extends BaseAdapter {
     }
 
     private String parseToString(List<String> list) {
-        int length = list.toString().length();
-        return list.toString().substring(1, length - 1);
+        return list.toString().substring(1, list.toString().length() - 1);
     }
 }
