@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         employeeList = findViewById(R.id.employees_list);
         StringRequest request = new StringRequest(URL, new Response.Listener<String>() {
             @Override
@@ -38,6 +37,4 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
         queue.add(request);
     }
-
-
 }
