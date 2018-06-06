@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HTC Test</string>
+    <string name="network_error">Network error</string>
 </resources>

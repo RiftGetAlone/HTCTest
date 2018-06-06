@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import java.util.List;
 
 import static android.view.View.inflate;
@@ -47,8 +46,7 @@ public class CustomAdapter extends BaseAdapter {
         return view;
     }
 
-    private String parseToString(List<String> list) {
-        int length = list.toString().length();
-        return list.toString().substring(1, length - 1);
+    public static String parseToString(List<String> list) {
+        return list.toString().substring(1, list.toString().length() - 1);
     }
 }

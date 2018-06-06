@@ -48,7 +48,7 @@ public class Company {
         }
 
         public List<EmployeesBean> getEmployees() {
-            Collections.sort(employees, new Comparator<EmployeesBean>(){
+            Collections.sort(employees, new Comparator<EmployeesBean>() {
                 public int compare(EmployeesBean obj1, EmployeesBean obj2) {
                     return obj1.name.compareToIgnoreCase(obj2.name);
                 }
